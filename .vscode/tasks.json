@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe 生成活动文件",
+			"command": "C:\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-I",
+				"${workspaceFolder}/aaaah",//公共自建头文件
+				"-I",
+				"${fileDirname}/h",//自建头文件
+				"-o",
+				"${fileDirname}\\exe\\${fileBasenameNoExtension}.exe",//exe生成路径，需同时修改lanch "program"
+				"-fexec-charset=gbk"//gbk
+			],
+			"options": {
+				"cwd": "C:\\mingw64\\bin\\"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: C:\\mingw64\\bin\\g++.exe"
+		},
+	]
+}

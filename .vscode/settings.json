@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "vector": "cpp"
+    },
+    "msg.editor.showHidden": false,
+    "msg.editor.theming.decorationSet": "standard"
+}
