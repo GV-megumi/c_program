@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 
-1
+1  ，11
 
 
 
@@ -51,7 +51,7 @@ double ave(int *p)
 {
     int i;
     double sum = 0;
-
+    // 求和
     for (i = 0; i < 16; i++)
     {
         sum += p[i];
@@ -65,8 +65,9 @@ void del(int *p)
 
     int i, max = 0, maxi;
 
-    int avenum = ave(p);
+    int avenum = ave(p); // 获取平均数
 
+    // 找出最大值
     for (i = 0; i < 16; i++)
     {
         if (abs(avenum - max) < abs(avenum - p[i]))
@@ -77,6 +78,7 @@ void del(int *p)
     }
     cout << "最大值 = " << max << endl;
 
+    // 删除最大值
     for (i = maxi; i < 16; i++)
         p[i] = p[i + 1];
     cout << "删除" << max << "后的数组元素：" << endl;
@@ -89,6 +91,7 @@ int main()
 
     a[0] = 55;
 
+    // 初始化
     init(a);
     cout << "a数组元素为：" << endl;
     print(a);

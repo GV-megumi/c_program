@@ -41,6 +41,7 @@ STR::STR(char *str)
 {
 
     int n = sizeof(str);
+    //申请空间
     s1 = new char[n];
     s2 = new char[n];
     for (int i = 0; i < n; i++)
@@ -50,7 +51,7 @@ STR::STR(char *str)
 void STR::delsame()
 {
     int i, j, s2num = 0;
-    bool notexit;
+    bool notexit;//判断s1中某字符是否在s2中
     char c;
     for (i = 0; s1[i] != '\0'; i++)
     {
@@ -63,14 +64,13 @@ void STR::delsame()
                 break;
             }
         }
-
+//添加s2字符
         if (notexit)
         {
             s2[s2num++] = s1[i];
         }
     }
     s2[s2num] = '\0';
-    // cout<<s2num;
 }
 void STR::show()
 {

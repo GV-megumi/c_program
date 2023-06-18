@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// 3
+// 3  ，12
 
 int sum(int b[3][4], int k) // 计算二维数组第k列的和
 {
