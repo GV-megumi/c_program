@@ -58,8 +58,7 @@ public:
     }
     ~NUM() // 析构函数，释放在构造函数中动态开辟的数组空间
     {
-        if (p)
-            delete[] p;
+        if (p)delete[]p;
     }
 };
 int main()
