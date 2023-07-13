@@ -15,7 +15,7 @@
 				"${fileDirname}/h",//自建头文件
 				"-o",
 				"${fileDirname}\\exe\\${fileBasenameNoExtension}.exe",//exe生成路径，需同时修改lanch "program"
-				"-fexec-charset=UTF-8"//gbk
+				"-fexec-charset=gbk"//gbk
 			],
 			"options": {
 				"cwd": "C:\\mingw64\\bin\\"
