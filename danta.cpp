@@ -126,6 +126,7 @@ int main()
     cout << "顺序：";
     putNo(maiwan);
     cout << endl;
+    cin>>n;
     system("pause");
     return 0;
 
